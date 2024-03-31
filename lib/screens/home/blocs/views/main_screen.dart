@@ -75,46 +75,70 @@ class MainScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(25),
               ),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'Total Balance'
-                  ),
-                  Text(
-                     '\$ 4800.00',
-                  ),
-                  Row(
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            width: 20,
-                            height: 20,
-                            decoration:const BoxDecoration(
-                              color: Colors.white30,
-                              shape: BoxShape.circle,
-                              ),
-                              child: const Center(
-                                child: Icon(
-                                  CupertinoIcons.arrow_down,
-                                  size: 12,
-                                ),
-                              ),
+                const Text(
+                  'Total Balance',
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600),
+                ),
+                const SizedBox(height:12 ,),
+                const Text(
+                  '\$ 4800.00',
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+                 const SizedBox(height:12 ,),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical:12, horizontal:20),
+                  child: Row(children: [
+                    Row(
+                      children: [
+                        Container(
+                          width: 25,
+                          height: 25,
+                          decoration: const BoxDecoration(
+                            color: Colors.white30,
+                            shape: BoxShape.circle,
                           ),
-                          SizedBox(width: 8,),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const Text('Income'),
-                              const Text('\$ 2500.00'),
-                              
-                            ],
-                          )
-                        ],
-                      )
-                    ]
-                  )
-                ]
-              ),
+                          child: const Center(
+                            child: Icon(
+                              CupertinoIcons.arrow_down,
+                              size: 12,
+                              color: Colors.greenAccent,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          width: 8,
+                        ),
+                        const Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Income',
+                              style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w400),
+                            ),
+                            Text('\$ 2500.00',
+                             style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600),
+                                  ),
+                          ],
+                        )
+                      ],
+                    )
+                  ]),
+                )
+              ]),
             )
           ],
         ),
