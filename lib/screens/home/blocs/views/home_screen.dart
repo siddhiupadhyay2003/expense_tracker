@@ -12,9 +12,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       // appBar: AppBar(),
       bottomNavigationBar: ClipRRect(
-        borderRadius: const BorderRadius.vertical(
-          top: Radius.circular(30)
-          ),
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(30)),
         child: BottomNavigationBar(
             backgroundColor: Colors.white,
             showSelectedLabels: false,
@@ -25,10 +23,9 @@ class HomeScreen extends StatelessWidget {
                   icon: Icon(CupertinoIcons.home), label: 'Home'),
               BottomNavigationBarItem(
                   icon: Icon(CupertinoIcons.graph_square_fill), label: 'Stats')
-            ]
-            ),
+            ]),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked ,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         shape: const CircleBorder(),
@@ -38,22 +35,18 @@ class HomeScreen extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             gradient: LinearGradient(
-              colors:[
+              colors: [
                 Theme.of(context).colorScheme.tertiary,
-                
                 Theme.of(context).colorScheme.secondary,
-                
                 Theme.of(context).colorScheme.primary,
-              ] ,
-              transform: const GradientRotation(pi/4),
-              ),
+              ],
+              transform: const GradientRotation(pi / 4),
+            ),
           ),
-          child: const Icon(
-            CupertinoIcons.add
-          ),
+          child: const Icon(CupertinoIcons.add),
         ),
-        ),
-        body: const MainScreen(),
+      ),
+      body: const MainScreen(),
     );
   }
 }
