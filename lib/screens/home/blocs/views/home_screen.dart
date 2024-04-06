@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
               colors: [
                 Theme.of(context).colorScheme.tertiary,
                 Theme.of(context).colorScheme.secondary,
-                Theme.of(context).colorScheme.primary,
+                Theme.of(context).colorScheme.primary
               ],
               transform: const GradientRotation(pi / 4),
             ),
