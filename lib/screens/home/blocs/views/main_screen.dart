@@ -283,7 +283,8 @@ class MainScreen extends StatelessWidget {
                                       fontWeight: FontWeight.w400,
                                     ),
                                   )
-                                ]),
+                                ]
+                                ),
                           ],
                         ),
                       ),
