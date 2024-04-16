@@ -1,5 +1,4 @@
 import 'package:expense_tracker/screens/stats/chart.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class StatScreen extends StatelessWidget {
@@ -7,10 +6,10 @@ class StatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return SafeArea(
       child: Padding(
-        padding: const  EdgeInsets.symmetric(horizontal: 25.0, vertical: 20),
-        child:  Column(
+        padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 10),
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
@@ -20,16 +19,20 @@ class StatScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-          const SizedBox(
-            height: 20,
-          ),
-          
-          SizedBox(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height,
-            // color: Colors.red,
-            child: const MyChart(),
-          )
+            const SizedBox(
+              height: 20,
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(12)),
+              // color: Colors.red,
+              child: const Padding(
+                padding: EdgeInsets.fromLTRB(12, 20, 12, 12),
+                child: MyChart(),
+              ),
+            )
           ],
         ),
       ),
