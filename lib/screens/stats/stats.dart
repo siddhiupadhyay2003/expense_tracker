@@ -22,12 +22,14 @@ class StatScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            Expanded(
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.5,
               child: Container(
-                // width: MediaQuery.of(context).size.width,
-                // height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+
                 decoration: BoxDecoration(
-                    color: Colors.white, borderRadius: BorderRadius.circular(12)),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(12)),
                 // color: Colors.red,
                 child: const Padding(
                   padding: EdgeInsets.fromLTRB(12, 20, 12, 12),
