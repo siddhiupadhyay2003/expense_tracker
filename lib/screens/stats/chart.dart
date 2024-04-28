@@ -28,7 +28,7 @@ class _MyChartState extends State<MyChart> {
               Theme.of(context).colorScheme.secondary,
               Theme.of(context).colorScheme.tertiary
             ],
-            transform: const GradientRotation(pi / 4),
+            transform: const GradientRotation(pi / 70),
           ),
           width: 10,
           backDrawRodData: BackgroundBarChartRodData(

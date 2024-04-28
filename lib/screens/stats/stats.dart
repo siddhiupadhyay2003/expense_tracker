@@ -23,7 +23,7 @@ class StatScreen extends StatelessWidget {
               height: 20,
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.5,
+              height: MediaQuery.of(context).size.height * 0.45,
               child: Container(
                 width: MediaQuery.of(context).size.width,
 
